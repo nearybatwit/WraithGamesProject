@@ -1,9 +1,11 @@
 package wraith;
-//tile(Extended by pathTile and towerTile)
+
+import javafx.scene.shape.Rectangle;
+
 public class Tile {
 	public int xPos;
-	public int yPos;
-	
+	private int yPos;
+	public Rectangle tileRect;
 	public Tile(int xPos, int yPos) {
 		this.xPos = xPos;
 		this.yPos = yPos;

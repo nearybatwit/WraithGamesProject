@@ -9,7 +9,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class Player extends Application{
-	double hp;
+	double hp=100;
 	boolean hellMode = false;
 	boolean pause = false;
 	String name;
@@ -20,13 +20,6 @@ public class Player extends Application{
 		launch(args);
 		
 		
-	}
-	
-	public int sellTower(int money) {
-		//call the sell method from the tower class
-		//Use the addmoney method during this to add to the player money amount
-		
-		return money;
 	}
 	
 	public boolean pause(boolean pause) { 
@@ -61,7 +54,7 @@ public class Player extends Application{
 	}
 	
 	public void damage(int dmg) {
-		this.hp -= dmg;
+		this.hp-=dmg;
 	}
 
 	@Override
@@ -76,11 +69,12 @@ public class Player extends Application{
                 System.out.println("F");
             }
         });
-
+        
         StackPane root = new StackPane();
         root.getChildren().add(btn);
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
+		
 		
 	}
 

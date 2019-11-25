@@ -99,7 +99,6 @@ public class Enemy {
 	public void move(ArrayList<Tile> pathPositions) {
 		//need to know positions of the path tiles
 		//currTile= currTile + speed;
-		//Set the path to follow the drawn path on the GUI
 
 	}
 

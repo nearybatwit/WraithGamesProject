@@ -10,7 +10,7 @@ public class Wave {
 	
 	public void sendWave(int enemyType, int quantity) {
 		
-		//int i
+		//int i;
 	}
 
 }

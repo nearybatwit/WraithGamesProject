@@ -1,12 +1,18 @@
 package wraith;
 import java.util.ArrayList;
-//extends Tile
+
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
 public class PathTile extends Tile{
+	
 	
 	ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 	
+	
 	public PathTile(int xPos, int yPos) {
 		super(xPos, yPos);
+		tileRect = new Rectangle(100, 100, new Color(.66, .6, .45, 1));
 	}
 
 	public void addEnemy(Enemy enemy) {
