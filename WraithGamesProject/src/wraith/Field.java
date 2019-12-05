@@ -146,7 +146,31 @@ public final Tile[][] tileArray = new Tile[5][5];
 			}
 			
 		};
+		//---------------------------------------------------------------------------------------------------------------------------------------------------
+		primaryStage.setTitle("Wraith Games Tower Defense");
 		
+		Image gameOverScreen = new Image("Wraith Games Game Over.png");
+		ImageView gameOverScreenView = new ImageView(gameOverScreen);
+		
+		Button mainMenubtn = new Button("Main Menu");
+		mainMenubtn.setMaxHeight(100);
+		mainMenubtn.setMaxWidth(250);
+		
+		StackPane mainMenuBase = new StackPane();
+		
+		mainMenuBase.getChildren().addAll(gameOverScreenView, mainMenubtn);
+		
+		Scene gameOverScene = new Scene(mainMenuBase, 600, 500);
+		primaryStage.setScene(gameOverScene);
+		primaryStage.show();
+		
+		
+					
+		
+		
+		
+		
+		//---------------------------------------------------------------------------------------------------------------------------------------------------
 		
 		
 		gameLoop.start();
@@ -243,3 +267,7 @@ public final Tile[][] tileArray = new Tile[5][5];
 	}
 
 }
+
+
+
+
